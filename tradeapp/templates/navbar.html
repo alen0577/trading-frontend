@@ -1,33 +1,89 @@
 {% load static %}
 
-<nav class="navbar navbar-expand-lg bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+<nav class="navbar navbar-expand-lg" data-bs-theme="light" style="border-bottom: 1px solid rgb(0, 98, 130);">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">TRADEX</a>
+      <a class="navbar-brand" href="#" style="color: rgb(0, 98, 130);font-family: 'Fugaz One', cursive;font-size: x-large;">Trade-X</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" aria-current="page" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"  href="#">Product</a>
+            <a class="nav-link"  href="#">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"  href="#">Services</a>
+            <a class="nav-link"  href="#">X-Learn <i class="fa fa-lightbulb fa-sm"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"  href="#">Contact</a>
+            <a class="nav-link"  href="#">Contact Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"  href="#">Signin</a>
+            <a class="nav-link"  href="{% url 'signin' %}">pricing</a>
           </li>
         </ul>
+        <form class="d-flex" role="search">
+          <a class="btn1" href="{% url 'signin' %}"><button class="btn  btn-sm sp" type="button" style="border: 2px solid rgb(0, 98, 130);">Open a Demat Account</button></a>
+
+          <a class="btn1" href="{% url 'signin' %}"><button class="btn  btn-sm sp  mx-3" type="button" style="border: 2px solid rgb(0, 98, 130);">Sign In</button></a>
+        </form>
+        <div>
+          
+
+        </div>
+        
+        
         
       </div>
     </div>
   </nav>
+
+<style>
+  body{
+    font-family: 'Lora', serif;
+       
+  }
+  .search-container {
+    position: relative;
+  }
+
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+
+  .search-input {
+    padding-left: 30px; /* Adjust the padding to make space for the icon */
+    background-color: rgb(230, 231, 255);
+    color: rgb(0, 0, 0);
+    border: 2px solid blueviolet;
+      
+  }
+    
+  li.nav-item a.nav-link{
+    color: black;
+  }
+  li.nav-item a.nav-link:hover{
+    color: rgb(0, 98, 130);
+  }
+  button.sp{
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  button.sp:hover{
+    
+    box-shadow: 0px 0px 10px rgba(0, 98, 130, 0.3);
+    background-color: rgb(0, 98, 130);
+    color: white;
+
+  }
+</style>
+    
