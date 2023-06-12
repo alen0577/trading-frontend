@@ -9,3 +9,12 @@ def signin(request):
 
 def signup(request):
     return render(request,'signup.html')       
+
+def about(request):
+    return render(request,'aboutus.html')      
+
+def contact(request):
+    return render(request,'contactus.html')      
+
+def demat(request):
+    return render(request,'demataccount.html')                  
