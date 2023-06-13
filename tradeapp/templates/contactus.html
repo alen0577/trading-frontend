@@ -13,7 +13,95 @@ Contact Us
 <div class="container">
     {% include 'navbar.html' %}
 </div>
-<hr style="color: rgb(0, 98, 130);">
+
+
+<section style="border-top: 1px solid rgb(3, 208, 208);">
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="/">Home</a></li>
+                      <li class="breadcrumb-item active text-secondary" aria-current="page">Help Center</li>
+                    </ol>
+                </nav>
+                <div class="row mt-5">
+                    <div class="col-lg-6">
+                        <h3 class="mt-5" style="font-family: 'Rye', cursive;">Have a query ?</h3>
+                        <p class="mt-2" style="text-align: justify;">Our X-Learn has answers for most questions. Please feel free to use these feature and get solutions to your issues</p>
+                        <div class="row">
+                            <a href=""><button class="button1 mb-5"><span>View Now</span></button></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="{% static 'images/hc1.webp' %}" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+    </div>
+
+
+
+</section>
+
+<section>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div class="row">
+                    <h3 style="font-family: 'Rye', cursive;">Frequently Asked Questions</h3>
+                </div>
+                <div class="row mt-5">
+                    <div class="responsive">
+                        <table class="table table-responsive table-dark table-hover">
+                            <tbody>
+                                <td>How can I change or reset my trading password?</td>
+                                
+                            </tbody>
+                            <tbody>
+                                <td>How can I unblock my account?</td>
+                                
+                            </tbody>
+                            <tbody>
+                                <td>How do I activate Commodities/Futures/Options segments in my Trade-X account?</td>
+                                
+                            </tbody>
+                            <tbody>
+                                <td>What is the Settlement Cycle when I sell my holdings?</td>
+                                
+                            </tbody>
+                            <tbody>
+                                <td>How to place a simple order?</td>
+                                
+                            </tbody>
+                            <tbody>
+                                <td>How can I generate a new CDSL TPIN?</td>
+                            </tbody>
+                            <tbody>
+                                <td>How can I check my previous ledger details?</td>
+                            </tbody>
+                            <tbody>
+                                <td>How to download the profit and loss report from the Keystone?</td>
+                            </tbody>
+                            <tbody>
+                                <td>How is the average price calculated for Delivery positions?</td>
+                            </tbody>
+                            <tbody>
+                                <td>Why is my balance negative in the Keystone ledger reports?</td>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+    </div>
+</section>
 
 
 
@@ -24,5 +112,51 @@ Contact Us
         color: white;
         font-family: Arial, Helvetica, sans-serif;
     }
+    a{
+      text-decoration: none;
+      color: white;
+    }
 </style>
+<style>
+    .button1 {
+      border-radius: 4px;
+      background-color: rgb(0, 187, 255);
+      border: none;
+      color: #000000;
+      text-align: center;
+      font-size: 16px;
+      padding: 5px;
+      width: 150px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+    }
+    
+    .button1 span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+    
+    .button1 span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+    
+    .button1:hover span {
+      padding-right: 20px;
+    }
+    
+    .button1:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+    
+</style>
+
 {% endblock %}
