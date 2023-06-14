@@ -8,4 +8,7 @@ urlpatterns = [
     path('aboutus/',views.about,name='about'),
     path('help/',views.contact,name='contact'),
     path('demataccount/',views.demat,name='demat'),
+    path('solution/',views.solution,name='solution'),
+    path('xlearn/',views.xlearn,name='xlearn'),
+    path('tutorials/',views.tutorials,name='tutorials'),
 ]

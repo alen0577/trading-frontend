@@ -1,0 +1,170 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+X-Learn
+{% endblock %}
+
+
+
+{% block body %}
+
+<div class="container  mt-3 mb-3">
+    {% include 'navbar.html' %}
+</div>
+
+<section style="border-top: 1px solid rgb(3, 208, 208);">
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-10">
+        <div class="row">
+          <h3 class="text-info" style="font-family: 'Rye', cursive;">X-Learn</h3>
+        </div>
+        <div class="row mt-5 mb-5">
+          <h5>Table of contents</h5>
+          <div class="responsive">
+            <table class="table table-responsive table-dark table-hover mt-4">
+              <tbody>
+                <td><a href="{% url 'tutorials' %}">Demat Account</a></td>
+              </tbody>
+              <tbody>
+                <td><a href="">Trading Account</a></td>
+              </tbody>
+              <tbody>
+                <td><a href="">Online Trading</a></td>
+              </tbody>
+              <tbody>
+                <td><a href="">Intraday Trading</a></td>
+              </tbody>
+              <tbody>
+                <td><a href="">Future and Options</a></td>
+              </tbody>
+              <tbody>
+                <td><a href="">Mutual Funds</a></td>
+              </tbody>
+              <tbody>
+                <td><a href="">Share Market</a></td>
+              </tbody>
+              <tbody>
+                <td><a href="">IPO</a></td>
+              </tbody>
+
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-1"></div>
+    </div>
+  </div>
+
+</section>
+
+
+
+
+
+
+
+<section id="footer">
+    <div class="container-fluid" style="color: rgb(255, 255, 255); background-color: rgb(20, 20, 20);border-top: 1px solid rgb(3, 208, 208);">
+      <div class="row mt-5">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+          <div class="row mt-5">
+            <div class="col-lg-3">
+              <a class="navbar-brand text-info" href="#" style="font-family: 'Metamorphous', cursive;font-size: x-large;">Trade-X</a>
+              <p class="mt-3" style="text-align: justify; color: white;">
+          
+                126 Arenja <br>
+                Arcade Bldg, <br> 
+                Abhudaya Bank, <br>
+                Krishi Bazaar <br>
+                Mumbai <br>
+                Maharashtra <br>      
+               India
+              
+              </p>
+              <p class="mb-5"><i class="fab fa-instagram"></i> <i class="fab fa-facebook"></i> <i class="fab fa-telegram"></i> <i class="fab fa-twitter"></i></p>
+              
+            </div>
+            <div class="col-lg-3">
+              <h4 class="text-info">Company</h4>
+              <a href=""><p class="mt-3">Home</p></a>
+              <a href=""><p class="mt-0">About Us</p></a>
+              <a href=""><p class="mt-0">Help Center</p></a>
+              <a href=""><p class="mt-0 mb-5">Announcements</p></a>
+            </div>
+            <div class="col-lg-3">
+              <h4 class="text-info">Services</h4>
+              <a href=""><p class="mt-3">Demat account</p></a>
+              <a href=""><p class="mt-0">Trading Account</p></a>
+              <a href=""><p class="mt-0">Invest</p></a>
+              <a href=""><p class="mt-0">Commodity Trading</p></a>
+              <a href=""><p class="mt-0 mb-5">Equity Trading</p></a>
+             
+            </div>
+            <div class="col-lg-3">
+              <h4 class="text-info">Products</h4>
+              <a href=""><p class="mt-3">Pro-Web</p></a>
+              <a href=""><p class="mt-0">Pro-Mob</p></a>
+              <a href=""><p class="mt-0">X-Learn</p></a>
+              <a href=""><p class="mt-0">Chart-Tools</p></a>
+              <a href=""><p class="mt-0 mb-5">Developer mode</p></a>
+            </div>
+            
+          </div>
+          <div class="row mt-3">
+            <div class="container">
+              <div class="col-lg-1"></div>
+              <div class="col-lg-10">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <img src="{% static 'images/ps.png' %}" alt="" class="img-fluid mt-2">
+                    <img src="{% static 'images/as.png' %}" alt="" class="img-fluid mt-2 mb-5">
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="container-fluid">
+                      <p style="text-align: justify; font-size: small; color: rgb(122, 122, 122);">
+                        The Transactions offered by this Website can be executed only by fully competent adults. 
+                        Transactions with financial instruments offered on the Website involve substantial risk 
+                        and trading may be very risky. If you make Transactions with the financial instruments offered on this Website, 
+                        you might incur substantial losses or even lose everything in your Account. Before you decide to start 
+                        Transactions with the financial instruments offered on the Website, you must review the Service Agreement 
+                        and Risk Disclosure Information.The services on the Website are provided by Aollikus Limited, a licensed 
+                        financial dealer, company number: 40131, registered address: 1276, Govant Building, Kumul Highway, Port Vila, 
+                        Republic of Vanuatu. Saledo Global LLC, registered at First Floor, First St. Vincent Bank Ltd Building, P.O. 
+                        Box 1574, James Street, Kingstown, St. Vincent & the Grenadines provides services to clients trading in digital 
+                        assets and to clients with accounts nominated in digital assets. The companies are fully licensed to perform its 
+                        activities by the laws of that country. Partner companies: VISEPOINT LIMITED (registration No. C 94716, registered 
+                        at 54, Immakulata, Triq il-Mina ta’ Hompesch, ZABBAR ZBR 9016) and MARTIQUE LIMITED (registration No. HE 43318, registered 
+                        at Loutrakiou, 5 Chara Venezia Building, 1st floor, office 101, Strovolos, 2027, Nicosia, Cyprus), provide content and perform 
+                        operational management of the business.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-1"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+    </div>
+  
+</section>
+
+<style>
+    body{
+        background-color: black;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    a{
+      text-decoration: none;
+      color: white;
+    }
+</style>
+{% endblock %}

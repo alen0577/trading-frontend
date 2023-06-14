@@ -1,0 +1,238 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+Solutions
+{% endblock %}
+
+
+
+{% block body %}
+
+<div class="container  mt-3 mb-3">
+    {% include 'navbar.html' %}
+</div>
+
+
+<section style="border-top: 1px solid rgb(3, 208, 208);">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div class="row">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="/">Home</a></li>
+                          <li class="breadcrumb-item"><a href="{% url 'contact' %}">Help Center</a></li>
+                          <li class="breadcrumb-item active text-secondary" aria-current="page">FAQ</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+    </div>
+
+
+</section>
+
+<section>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div class="row">
+                    <h3 class="text-info">How to trade in F&O?</h3>
+                </div>
+                <div class="row">
+                    <p class="mt-5" style="text-align: justify;">
+                        A stock market is a place of uncertainties. 
+                        However, understanding the market emotions and linking them with external 
+                        factors can help you achieve profitability matra. 
+                        Another important aspect is to ensure or hedge the risk factor by investing in futures and options. <br><br>
+                        Futures and options, aka F&O, are derivatives in the form of stocks, 
+                        indexes, bonds or commodities, and their value can be derived from either of these underlying assets. <br><br>
+                        The primary question that arises is how to trade in futures and options. 
+                        To provide a simple one-line answer, the trader must thoroughly understand fundamental and technical analytics, 
+                        F&O strategies, and different put and call options. <br><br>
+                        If you want to know how to do F&O trading as a beginner, read the article till the end.
+
+
+                    </p>
+                </div>
+                <div class="row">
+                    <h5 class="mt-5 text-info">The difference between Futures and Options</h5>
+                    <p class="mt-3" style="text-align: justify;">
+                        Stocks can be traded directly in the stock market. 
+                        However, derivatives indicate the asset's underlying value and trade can be 
+                        made by assessing and placing the future value of the underlying assets.
+                        As named, futures contracts are based on the derivatives whose future value on a fixed date is locked, 
+                        and the buyer and seller are obliged to trade the derivative at the locked price. 
+                        Although the same fundamental of locking the price applies to the Options contract, 
+                        it is not an obligation for the buyer. The buyer can opt out of the contract. <br> <br>
+                        Some commonly used terms in derivative contracts are, <br><br>
+                        <b>Call Option:</b> The buyer can buy the derivative at the locked price on or before the expiration of the contract. <br>
+
+                        <b>Put Option:</b> The buyer can sell the derivative at the locked price on or before the expiration of the contract. <br>
+                    </p>
+                </div>
+                <div class="row">
+                    <h5 class="mt-5 text-info">How to trade in Futures and Options</h5>
+                    <p class="mt-3" style="text-align: justify;">
+                        As mentioned, investing in the stock market includes buying and selling securities. 
+                        Follow these steps to get started: <br><br>
+                        
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="container">
+                        <ul style="text-align: justify;">
+                            <li><b>Step 1:</b> Create a trading account with NSE or BSE-authorised broker. You can trade in Futures and Options contracts only through the trading account. Choose a trustworthy and dependable broking firm.</li>
+                            <li><b>Step 2:</b> By login into the portal or the mobile application, choose the F&O you want to trade based on your research.</li>
+                            <li><b>Step 3:</b> Put the order details of the shortlisted derivatives at the strike price (the price and time that you lock the price for the future). Call or put options should be exercised based on whether you want to sell them (Put) or buy them (Call) based on your price rise predictions or vice versa for low price predictions.</li>
+                            <li><b>Step 4:</b> Once you have bought the F&O, you can either offset the position or exercise the position.</li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="" style="text-align: justify;">
+                        Offsetting the position means selling the options contract before the date of expiration.
+                        Exercising the position means selling for a call option when the price exceeds the strike price.
+                        Similarly, exercise the put option if the price is lower than the strike price.
+                        However, when the call option of the asset expires below the strike price or when the pull option of the asset price is more than the strike price, the contract is said to have expired worthless.
+                    </p>
+                    <h5 class="mt-5 text-info">Things to remember</h5>
+                    <div class="container">
+                        <ul style="text-align: justify;">
+                            <li>Futures are available only on select sets of stocks.</li>
+                            <li>You must maintain funding of margins that your broker will charge whether buying or selling the futures contracts.</li>
+                            <li>Premiums need to be deposited for buy options.</li>
+                            <li>F&O contracts can be for one, two or three-month periods.</li>
+                            <li>The contract expiration date has to be the last Thursday of every month. In case of a holiday on Thursday, the trade should be conducted on the previous trading day.</li>
+                            <li>You can opt to sell the contract before the expiry date; otherwise, the profit or loss is shared on the expiry date.</li>
+                        </ul>
+                    </div>
+                    <h5 class="mt-5 text-info">Conclusion</h5>
+                    <p class="mb-5" style="text-align: justify;">
+                        The best of how to learn F&O trading is by doing thorough research, 
+                        understanding the analytical charts and understanding the changes in 
+                        the market based on external economic and political factors. 
+                        Assessing your risk appetite is equally essential. 
+                        Thus, it is advised to start with a small amount, to begin with. 
+                        If you have the right broking firm for advice and analytics, earning profits through F&O trading will be simple.
+                    </p>
+
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+    </div>
+</section>
+
+<section id="footer">
+    <div class="container-fluid" style="color: rgb(255, 255, 255); background-color: rgb(20, 20, 20);border-top: 1px solid rgb(3, 208, 208);">
+      <div class="row mt-5">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+          <div class="row mt-5">
+            <div class="col-lg-3">
+              <a class="navbar-brand text-info" href="#" style="font-family: 'Metamorphous', cursive;font-size: x-large;">Trade-X</a>
+              <p class="mt-3" style="text-align: justify; color: white;">
+          
+                126 Arenja <br>
+                Arcade Bldg, <br> 
+                Abhudaya Bank, <br>
+                Krishi Bazaar <br>
+                Mumbai <br>
+                Maharashtra <br>      
+               India
+              
+              </p>
+              <p class="mb-5"><i class="fab fa-instagram"></i> <i class="fab fa-facebook"></i> <i class="fab fa-telegram"></i> <i class="fab fa-twitter"></i></p>
+              
+            </div>
+            <div class="col-lg-3">
+              <h4 class="text-info">Company</h4>
+              <a href=""><p class="mt-3">Home</p></a>
+              <a href=""><p class="mt-0">About Us</p></a>
+              <a href=""><p class="mt-0">Help Center</p></a>
+              <a href=""><p class="mt-0 mb-5">Announcements</p></a>
+            </div>
+            <div class="col-lg-3">
+              <h4 class="text-info">Services</h4>
+              <a href=""><p class="mt-3">Demat account</p></a>
+              <a href=""><p class="mt-0">Trading Account</p></a>
+              <a href=""><p class="mt-0">Invest</p></a>
+              <a href=""><p class="mt-0">Commodity Trading</p></a>
+              <a href=""><p class="mt-0 mb-5">Equity Trading</p></a>
+             
+            </div>
+            <div class="col-lg-3">
+              <h4 class="text-info">Products</h4>
+              <a href=""><p class="mt-3">Pro-Web</p></a>
+              <a href=""><p class="mt-0">Pro-Mob</p></a>
+              <a href=""><p class="mt-0">X-Learn</p></a>
+              <a href=""><p class="mt-0">Chart-Tools</p></a>
+              <a href=""><p class="mt-0 mb-5">Developer mode</p></a>
+            </div>
+            
+          </div>
+          <div class="row mt-3">
+            <div class="container">
+              <div class="col-lg-1"></div>
+              <div class="col-lg-10">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <img src="{% static 'images/ps.png' %}" alt="" class="img-fluid mt-2">
+                    <img src="{% static 'images/as.png' %}" alt="" class="img-fluid mt-2 mb-5">
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="container-fluid">
+                      <p style="text-align: justify; font-size: small; color: rgb(122, 122, 122);">
+                        The Transactions offered by this Website can be executed only by fully competent adults. 
+                        Transactions with financial instruments offered on the Website involve substantial risk 
+                        and trading may be very risky. If you make Transactions with the financial instruments offered on this Website, 
+                        you might incur substantial losses or even lose everything in your Account. Before you decide to start 
+                        Transactions with the financial instruments offered on the Website, you must review the Service Agreement 
+                        and Risk Disclosure Information.The services on the Website are provided by Aollikus Limited, a licensed 
+                        financial dealer, company number: 40131, registered address: 1276, Govant Building, Kumul Highway, Port Vila, 
+                        Republic of Vanuatu. Saledo Global LLC, registered at First Floor, First St. Vincent Bank Ltd Building, P.O. 
+                        Box 1574, James Street, Kingstown, St. Vincent & the Grenadines provides services to clients trading in digital 
+                        assets and to clients with accounts nominated in digital assets. The companies are fully licensed to perform its 
+                        activities by the laws of that country. Partner companies: VISEPOINT LIMITED (registration No. C 94716, registered 
+                        at 54, Immakulata, Triq il-Mina ta’ Hompesch, ZABBAR ZBR 9016) and MARTIQUE LIMITED (registration No. HE 43318, registered 
+                        at Loutrakiou, 5 Chara Venezia Building, 1st floor, office 101, Strovolos, 2027, Nicosia, Cyprus), provide content and perform 
+                        operational management of the business.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-1"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+    </div>
+  
+</section>
+
+
+
+
+<style>
+    body{
+        background-color: black;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    a{
+      text-decoration: none;
+      color: white;
+    }
+</style>
+
+{% endblock %}

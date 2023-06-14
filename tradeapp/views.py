@@ -18,3 +18,13 @@ def contact(request):
 
 def demat(request):
     return render(request,'demataccount.html')                  
+
+def solution(request):
+    return render(request,'solutions.html')  
+
+def xlearn(request):
+    return render(request,'xlearn.html')  
+
+
+def tutorials(request):
+    return render(request,'tutorials.html')                                  

@@ -10,7 +10,7 @@ About us
 
 {% block body %}
 
-<div class="container">
+<div class="container  mt-3 mb-3">
     {% include 'navbar.html' %}
 </div>
 
@@ -96,23 +96,23 @@ About us
                 <div class="row mt-5">
                     <h3 class=""  style="font-family: 'Rye', cursive;">Trade-X  Family</h3>
                 </div>
-                <div class="row mt-5">
-                    <div class="col-lg-6">
-                        <h4>90 M+</h4>
+                <div class="row mt-5 text-info" >
+                    <div class="col-lg-6 border">
+                        <h4 class="mt-3">90 M+</h4>
                         <h6 class="mb-5">TRADER ACCOUNTS</h6>
                     </div>
-                    <div class="col-lg-6">
-                        <h4>$ 16 M+</h4>
+                    <div class="col-lg-6 border">
+                        <h4 class="mt-3">$ 16 M+</h4>
                         <h6 class="mb-5">AVERAGE MONTHLY PAYOUTS</h6>
                     </div>
                 </div>
-                <div class="row mt-5">
-                    <div class="col-lg-6">
-                        <h4>30M+</h4>
+                <div class="row text-info">
+                    <div class="col-lg-6 border">
+                        <h4 class="mt-3">30M+</h4>
                         <h6 class="mb-5">MONTHLY TRANSACTIONS</h6>
                     </div>
-                    <div class="col-lg-6">
-                        <h4>$211M</h4>
+                    <div class="col-lg-6 border">
+                        <h4 class="mt-3">$211M</h4>
                         <h6 class="mb-5">MONTHLY TRADE TURNOVER</h6>
                     </div>
                 </div>
@@ -127,7 +127,7 @@ About us
         <div class="row mt-5">
             <div class="col-lg-1"></div>
             <div class="col-lg-10">
-                <div class="row">
+                <div class="row mt-5">
                     <div class="col-lg-12">
                         <h3 style="font-family: 'Rye', cursive;">Our goal is to make the world of finance more accessible and attainable</h3>
                     </div>
@@ -137,7 +137,7 @@ About us
                         <ul class="arrow-list">
                             <li><h5>Up to 5X leverage on intraday trading</h5></li>
                             <li><h5>Call & Trade facility</h5></li>
-                            <li><h5>Up to ₹20/order brokerage</h5></li>
+                            <li><h5 class="mb-5">Up to ₹20/order brokerage</h5></li>
                         </ul>
                     </div>
                     <div class="col-lg-6">
@@ -161,13 +161,102 @@ About us
 
 <section>
     <div class="container">
-        <div class="row mt-5">
+        <div class="row mt-3 mb-5">
             <div class="col-lg-1"></div>
             <div class="col-lg-10">
                 <div class="row mt-5">
-                    <div class="col-lg-12">
-                        <h3>Loved & Trusted by 1 crore+ Indians</h3>
-                        <h6 style="text-align: justify;">The truth that makes or breaks investors in their goal to prosperity</h6>
+                    <div class="col-lg-4">
+                        <h3 class="mt-5" style="font-family: 'Rye', cursive;">Loved & Trusted by 1 crore+ Indians</h3>
+                        <h6 class="mb-5" style="text-align: justify;">The truth that makes or breaks investors in their goal to prosperity</h6>
+                        <div class="row">
+                            <a href="{% url 'demat' %}"><button class="button1 mb-5"><span>Start trading </span></button></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="container" style="background-color: rgb(20, 20, 20); border-radius: 10px;border: 1px solid rgb(3, 208, 208);">
+                            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active" data-bs-interval="3000" >
+                                    <div class="row mt-2">
+                                        <div class="col-lg-5">
+                                            <div class="profile">
+                                                <img src="{% static 'images/pp4.jpg' %}" class="img-fluid w-100 rounded-5 mt-3" alt="...">
+                                                <h3 class="mt-2 text-center">John Doe</h3>
+                                                <p class="mt-1 text-center">Professional Trader</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <div class="bio">
+                                                <i class="fa fa-quote-left mt-3"></i>
+                                                <p style="text-align: justify;">
+                                                    As a professional trader, I'm always on the lookout for reliable platforms to expand my network 
+                                                    and find new opportunities. This trade website has exceeded my expectations. 
+                                                    The vast community of traders and investors has allowed me to connect with like-minded individuals, 
+                                                    exchange valuable insights, and grow my portfolio. I'm grateful for this platform's contribution 
+                                                    to my success.
+                                                </p><i class="fa fa-quote-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                  <div class="carousel-item" data-bs-interval="3000">
+                                    <div class="row mt-2">
+                                        <div class="col-lg-5">
+                                            <div class="profile">
+                                                <img src="{% static 'images/pp5.jpg' %}" class="img-fluid w-100 rounded-5 mt-3" alt="...">
+                                                <h3 class="mt-2 text-center"> Michael </h3>
+                                                <p class="mt-1 text-center">Active Trader</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <div class="bio">
+                                                <i class="fa fa-quote-left mt-3"></i>
+                                                <p style="text-align: justify;">
+                                                    This trade website has simplified my trading experience tremendously. 
+                                                    The intuitive trading interface allows me to execute trades seamlessly, 
+                                                    and the order execution speed is impressive. The platform's advanced features, 
+                                                    such as customizable watchlists and alerts, help me stay on top of market movements. 
+                                                    I have full confidence in this website, and it has become an integral part of my trading routine.
+                                                </p><i class="fa fa-quote-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                  </div>
+                                  <div class="carousel-item" data-bs-interval="3000">
+                                    <div class="row mt-2">
+                                        <div class="col-lg-5">
+                                            <div class="profile">
+                                                <img src="{% static 'images/pp6.jpg' %}" class="img-fluid w-100 rounded-5 mt-3" alt="...">
+                                                <h3 class="mt-2 text-center">Mark</h3>
+                                                <p class="mt-1 text-center">Professional Trader</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <div class="bio">
+                                                <i class="fa fa-quote-left mt-3"></i>
+                                                <p style="text-align: justify;">
+                                                    I've been using this trade website for my business for over a year now, 
+                                                    and I couldn't be happier with the results. The platform is incredibly user-friendly,
+                                                    and it has helped me connect with numerous potential clients. 
+                                                    The website's features and tools have made my trading operations smooth and efficient. Highly recommended!
+                                                </p><i class="fa fa-quote-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
@@ -187,7 +276,7 @@ About us
     </div>
 </section>
 
-<section id="" >
+<section id="footer">
     <div class="container-fluid" style="color: rgb(255, 255, 255); background-color: rgb(20, 20, 20);border-top: 1px solid rgb(3, 208, 208);">
       <div class="row mt-5">
         <div class="col-lg-2"></div>
@@ -302,6 +391,49 @@ About us
       padding-left: 20px; /* Adjust as needed */
       margin-bottom: 5px; /* Adjust as needed */
     }
-  </style>
+</style>
+
+<style>
+    .button1 {
+      border-radius: 4px;
+      background-color: rgb(0, 187, 255);
+      border: none;
+      color: #000000;
+      text-align: center;
+      font-size: 16px;
+      padding: 5px;
+      width: 150px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+    }
+    
+    .button1 span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+    
+    .button1 span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+    
+    .button1:hover span {
+      padding-right: 20px;
+    }
+    
+    .button1:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+    
+</style>
+
 
 {% endblock %}
